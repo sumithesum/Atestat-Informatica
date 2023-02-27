@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+    <link rel="stylesheet" href="style.css">
+
+<body class="bodymain">
+   <p id="cos"></p> 
+</body>
+<script type="text/javascript">
+    var s=0;
+    var nume=[], pret=[], j=0;
+    nume[j]="New World",pret[j]=40,j++;
+    nume[j]="Star Wars Last Jedi",pret[j]=30,j++;
+    nume[j]="Dark Souls III",pret[j]=60,j++;
+    nume[j]="Elden Ring",pret[j]=60,j++;
+    nume[j]="The Witcher 3",pret[j]=20,j++;
+    nume[j]="Democracy 4",pret[j]=25,j++;
+    nume[j]="DarksidersII1",pret[j]=30,j++;
+    var ok=[0];
+    var i=0;
+    ok[i]= localStorage.getItem("ok1"),i++,localStorage.setItem("ok1",0);
+    ok[i]= localStorage.getItem("ok2"),i++,localStorage.setItem("ok2",0);
+    ok[i]= localStorage.getItem("ok3"),i++,localStorage.setItem("ok3",0);
+    ok[i]= localStorage.getItem("ok4"),i++,localStorage.setItem("ok4",0);
+    ok[i]= localStorage.getItem("ok5"),i++,localStorage.setItem("ok5",0);
+    ok[i]= localStorage.getItem("ok6"),i++,localStorage.setItem("ok6",0);
+    ok[i]= localStorage.getItem("ok7"),i++,localStorage.setItem("ok7",0);
+    for(let k=0;k<i;k++)
+        {if(ok[k]>0)
+         {
+             document.write("Ai cumparat "+nume[k]+" de "+ok[k]+" ori cu pretul de "+pret[k]+"euro fiecare "+"<br>");
+         }
+         while(ok[k]>0)
+            {
+            s+=pret[k];
+            ok[k]--;
+            }
+         }
+         document.write("<br>"+"<br>"+"<br>");
+         if(s!=0)
+         { 
+             document.write("Pretul total este de "+s+" Euro");
+             let oks=1;
+             setInterval(Alerta,2000);
+            function Alerta() {
+                    if(oks==1)
+                        {
+                            alert("Nu putem prelucra tranzactia...");
+                            oks=0;
+                            s=0;
+                        }
+                
+            } 
+         }
+         
+</script>
+</html>

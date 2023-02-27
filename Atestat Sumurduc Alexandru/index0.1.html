@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atestat</title>
+    <script type="text/javascript" >
+   var ok=localStorage.getItem("afisare");
+   function afisare(){
+    ok=localStorage.getItem("afisare");
+    if(ok==0)
+     document.getElementById("set").cols="0%,*";
+        else
+        if(ok==1)
+          document.getElementById("set").cols="20%,*";
+
+   }
+   window.onload = setInterval(afisare);
+   </script>
+</head>
+    <frameset rows="15%,*" border="5" bordercolor="#000000" >
+      <frame src="titlu.html" scrolling="no"   />
+   <frameset id="set" class="frame" border="1" cols="20%,*"  >
+ <frame src="meniu.html" scrolling="no" />
+ <frame src="acasa.html"scrolling="auto" name="pag"/>
+  </frameset>
+ </frameset>
+</html>

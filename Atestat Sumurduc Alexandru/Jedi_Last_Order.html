@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/1e52114838.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jedi_Last_Order</title>
+  </head>
+  <body class="bodymain">
+    <p class="scris_titlu">STAR WARS Jedi: Fallen Order</p>
+    <img src="" id="poze" class="poza" />
+    <br />
+    <p class="scris_titlu2">DESCRIERE</p>
+    <p class="scris_normal">
+      Star Wars Jedi: Fallen Order este un joc de acțiune și aventură plasat
+      după evenimentele din Star Wars: Revenge of the Sith.
+      <br />
+      Dezvoltați-vă abilitățile Forței, perfecționați-vă tehnicile cu sabia
+      laser și explorați misterele străvechi ale unei civilizații pierdute de
+      mult timp - totul în timp ce rămâneți cu un pas înaintea Imperiului și a
+      inchizitorilor săi mortali.
+      <br><br>
+      Publicat de Electronic Arts.
+    </p>
+    <br /><br />
+    <p class="scris_normal">
+      <span class="scris_mictitlu"
+        >Etichete populare definite pentru acest produs:</span
+      ><br />
+       <ul class="scris_normal">
+        <li>Acțiune-aventura</li> 
+        <li>Persoana a treia</li>
+        <li> RPG </li> 
+        <li>Poate deveni dificil</li>
+        </ul>
+     </p>
+    <p class="scris_titlu2">CERINȚE DE SISTEM</p>
+    <p class="scris_normal">
+      <span class="scris_mictitlu">MINIM:</span>
+      <br />
+      <br />
+      <span class="box"
+        >Necesită un procesor pe 64 de biți și un sistem de operare</span
+      ><br />
+      <span class="box">OS: Windows 7/8.1/10 pe 64 de biți</span><br />
+      <span class="box">Procesor: AMD FX-6100/Intel i3-3220 sau echivalent</span
+      ><br />
+      <span class="box">Memorie: 8 GB RAM</span><br />
+      <span class="box"
+        >Grafică: AMD Radeon HD 7750, NVIDIA GeForce GTX 650 sau
+        echivalent</span
+      ><br />
+      <span class="box">DirectX: Versiunea 11</span><br />
+      <span class="box">Stocare: 55 GB spațiu disponibil</span><br />
+    </p>
+    <p class="scris_normal">
+      <span class="scris_mictitlu">RECOMANDAT:</span>
+      <br />
+      <br />
+      <span class="box">Necesită un procesor pe 64 de biți și un sistem de operare</span><br />
+      <span class="box">OS: Windows 7/8.1/10 pe 64 de biți</span><br />
+      <span class="box">Procesor: AMD Ryzen 7 1700/Intel i7-6700K sau echivalent</span
+      ><br />
+      <span class="box">Memorie: 16 GB RAM</span><br />
+      <span class="box"
+        >Grafică: AMD RX Vega 56, Nvidia GTX 1070/GTX1660Ti sau echivalent</span
+      ><br />
+      <span class="box">DirectX: Versiunea 11</span><br />
+      <span class="box">Stocare: 55 GB spațiu disponibil</span><br />
+
+      <button onclick="cumpara()" class="btn btn-2 btn-sep icon-cart">Cumpara</button>
+      <br />
+      <a href="Pagina1.html" > <button  class="back" >   Inapoi   </button> </a>
+      
+    
+    </p>
+  </body>
+
+  <script type="text/javascript">
+    let imagine = document.getElementById("poze");
+    let poze = ["Star Wars 1.jpg", "Star Wars 2.jpg", "Star Wars 3.jpg"];
+    setInterval(Functie, 2400);
+    /* function Functie()  Module de a face cu random number;
+        {
+            let random=Math.floor(Math.random() * 3);
+            console.log(random);
+            imagine.src=poze[random];
+        }  */
+    var k = 0;
+    imagine.src = poze[k];
+
+    function Functie() {
+      k++;
+      if (k == 3) k = 0;
+      imagine.src = poze[k];
+    }
+  </script>
+  <script type="text/javascript">
+    var x=0;
+    function cumpara()
+    {
+  var i= window.prompt("Cate exemplare vrei sa cumperi ? ");
+     i=Number(i) ;
+    x=x+i;
+     let ok=confirm('Cu siguranta vrei sa cumperi '+x+" exemplare?");
+     if(ok==true)
+     localStorage.setItem("ok2",x);
+      return ;
+    }
+    
+  </script>
+</html>

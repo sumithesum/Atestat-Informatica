@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1e52114838.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>New World</title>
+</head>
+<body>
+    <body class="bodymain">
+        <p class="scris_titlu">New World</p>
+        <img src="" id="poze" class="poza" />
+        <br />
+        <p class="scris_titlu2">DESCRIERE</p>
+        <p class="scris_normal">
+            &nbsp;&nbsp;&nbsp;&nbsp;The Witcher 3: Wild Hunt este un joc de rol de acțiune cu o perspectivă la persoana a treia. Jucătorii îl controlează pe Geralt din Rivia, un ucigaș de monștri cunoscut sub numele de Witcher. Geralt merge, aleargă, se rostogolește și se eschivează și (pentru prima dată în serie) sare, urcă și înoată.<br>
+             El are o varietate de arme, inclusiv bombe, o arbaletă și două săbii (una de oțel și una de argint). Sabia de oțel este folosită în primul rând pentru a ucide oameni, în timp ce sabia de argint este mai eficientă împotriva creaturilor și monștrilor. <br>Jucătorii își pot scoate, schimba și înveli săbiile după bunul plac. Există două moduri de atac corp la corp; atacurile ușoare sunt rapide, dar slabe, iar atacurile grele sunt lente, dar puternice.<br> Jucătorii pot bloca și contracara atacurile inamice cu săbiile lor. Săbiile au o rezistență limitată și necesită reparații regulate. Pe lângă atacurile fizice, Geralt are la dispoziție cinci semne magice: Aard, Axii, Igni, Yrden și Quen. Aard îl îndeamnă pe Geralt să declanșeze o explozie telekinetică, Axii îi încurcă pe inamici, Igni îi arde, Yrden îi încetinește și Quen oferă jucătorilor un scut de protecție temporar. Semnele folosesc rezistență și nu pot fi folosite la nesfârșit. Jucătorii pot folosi mutageni pentru a crește puterea magică a lui Geralt. Geralt își pierde sănătatea atunci când este atacat de inamici, deși purtarea armurii poate ajuta la reducerea pierderii sănătății. Sănătatea este restabilită prin meditație sau consumabile, cum ar fi alimente și poțiuni. Jucătorii o controlează ocazional pe Ciri, fiica adoptivă a lui Geralt, care se poate teleporta pe distanțe scurte.
+
+         
+         
+        
+        <br /><br />
+        Publicat de CD Projekt </p>
+        <p class="scris_normal">
+          <span class="scris_mictitlu"
+            >Etichete populare definite pentru acest produs:</span
+          ><br />
+           <ul class="scris_normal">
+            <li>Joc de rol </li> 
+            <li>Open World</li>
+            <li> RPG+ </li> 
+            <li>Joc video de aventura</li>
+            </ul>
+         </p>
+
+
+        <p class="scris_titlu2">CERINȚE DE SISTEM</p>
+        <p class="scris_normal">
+          <span class="scris_mictitlu">MINIM:</span>
+          <br />
+          <br />
+          <span class="box"
+            >Necesită un procesor pe 64 de biți și un sistem de operare</span
+          ><br />
+          <span class="box">OS: Windows 10 pe 64 de biți</span><br />
+          <span class="box">Procesor: Intel Core i5-7400 / procesor AMD cu 8 nuclee
+               fizice la 3 Ghz sau echivalent</span
+          ><br />
+          <span class="box">Memorie: 8 GB RAM</span><br />
+          <span class="box"
+            >NVIDIA GeForce GTX 1660 4GBsau mai bună</span
+          ><br />
+          <span class="box">DirectX: Versiunea 12</span><br />
+          <span class="box">Stocare: 50 GB spațiu disponibil</span><br />
+          <span class="box">Rețea: conexiune </span><br />
+        </p>
+
+
+
+        <p class="scris_normal">
+          <span class="scris_mictitlu">RECOMANDAT:</span>
+          <br />
+          <br />
+          <span class="box">Necesită un procesor pe 64 de biți și un sistem de operare</span><br />
+          <span class="box">OS: Windows 10 pe 64 de biți</span><br />
+          <span class="box">Procesor: Intel Core i7-7407 / procesor AMD cu 8 nuclee fizice
+               la 4.2 Ghz sau echivalent</span
+          ><br />
+          <span class="box">Memorie: 8 GB RAM</span><br />
+          <span class="box"
+            >Grafică: NVIDIA GeForce GTX 1800 4GB  sau mai bună</span
+          ><br />
+          <span class="box">DirectX: Versiunea 12</span><br />
+          <span class="box">Stocare: 55 GB spațiu disponibil</span><br />
+          <span class="box">Rețea: conexiune la internet este optionala</span><br />
+        </p>
+        <br><br>
+
+
+
+        <p class="scris_mictitlu"> Pretul este de 29.99€ </p>
+        
+        <button onclick="cumpara()" class="btn btn-2 btn-sep icon-cart">Cumpara</button>
+       <br> <a href="Pagina1.html" > <button  class="back" >   Inapoi   </button> </a>
+    
+    </body>
+
+
+      <script type="text/javascript">
+        let imagine = document.getElementById("poze");
+        let poze = ["The Witcher1.jpg", "The Witcher2.jpg", "The Witcher3.jpg"];
+
+        setInterval(Functie, 2400);
+        var k = 0;
+        imagine.src = poze[k];
+    
+        function Functie() {
+          k++;
+          if (k == 3) k = 0;
+          imagine.src = poze[k];
+        }
+      </script>
+      <script type="text/javascript">
+        var x=0;
+        function cumpara()
+        {var i= window.prompt("Cate exemplare vrei sa cumperi ? ");
+     i=Number(i) ;
+    x=x+i;
+     let ok=confirm('Cu siguranta vrei sa cumperi '+x+" exemplare?");
+     if(ok==true)
+     localStorage.setItem("ok5",x);
+      return ;
+        }
+        
+      </script>
+</body>
+</html>

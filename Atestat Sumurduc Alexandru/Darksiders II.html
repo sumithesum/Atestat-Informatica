@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1e52114838.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>New World</title>
+</head>
+<body>
+    <body class="bodymain">
+        <p class="scris_titlu">New World</p>
+        <img src="" id="poze" class="poza" />
+        <br />
+        <p class="scris_titlu2">DESCRIERE</p>
+        <p class="scris_normal">
+            &nbsp;&nbsp;&nbsp;&nbsp;Luați o poveste bazată pe mitologia familiară a celor patru călăreți ai Apocalipsei, lupta fulgerătoare a jocurilor de acțiune combo, colecția de obiecte dintr-un dungeon-crawler, apoi acordați-i scopul unui titlu Zelda și veți avea un idee la ce să vă așteptați de la franciza Darksiders de la THQ. Originalitatea, s-ar putea spune, nu este punctul forte al seriei. Totuși, în ciuda inspirației crescute, Darksiders II combină cu succes acele idei populare și elemente de joc pentru a forma unul dintre cele mai bune titluri de acțiune și aventură pe care le vei juca.
+         
+         
+        
+        <br /><br />
+        Publicat de CD Projekt </p>
+        <p class="scris_normal">
+          <span class="scris_mictitlu"
+            >Etichete populare definite pentru acest produs:</span
+          ><br />
+           <ul class="scris_normal">
+            <li>Joc de rol </li> 
+            <li>Open World</li>
+            <li> RPG+ </li> 
+            <li> Joc cu poveste in serie </li> 
+            <li>Joc video de aventura</li>
+            </ul>
+         </p>
+
+
+        <p class="scris_titlu2">CERINȚE DE SISTEM</p>
+        <p class="scris_normal">
+          <span class="scris_mictitlu">MINIM:</span>
+          <br />
+          <br />
+          <span class="box"
+            >Necesită un procesor pe 64 de biți și un sistem de operare</span
+          ><br />
+          <span class="box">OS: Windows 10 pe 64 de biți</span><br />
+          <span class="box">Procesor: Intel Core i5-7400 / procesor AMD cu 8 nuclee
+               fizice la 3 Ghz sau echivalent</span
+          ><br />
+          <span class="box">Memorie: 8 GB RAM</span><br />
+          <span class="box"
+            >NVIDIA GeForce GTX 1660 4GBsau mai bună</span
+          ><br />
+          <span class="box">DirectX: Versiunea 12</span><br />
+          <span class="box">Stocare: 50 GB spațiu disponibil</span><br />
+          <span class="box">Rețea: conexiune </span><br />
+        </p>
+
+
+
+        <p class="scris_normal">
+          <span class="scris_mictitlu">RECOMANDAT:</span>
+          <br />
+          <br />
+          <span class="box">Necesită un procesor pe 64 de biți și un sistem de operare</span><br />
+          <span class="box">OS: Windows 10 pe 64 de biți</span><br />
+          <span class="box">Procesor: Intel Core i7-7407 / procesor AMD cu 8 nuclee fizice
+               la 4.2 Ghz sau echivalent</span
+          ><br />
+          <span class="box">Memorie: 8 GB RAM</span><br />
+          <span class="box"
+            >Grafică: NVIDIA GeForce GTX 1800 4GB  sau mai bună</span
+          ><br />
+          <span class="box">DirectX: Versiunea 12</span><br />
+          <span class="box">Stocare: 55 GB spațiu disponibil</span><br />
+          <span class="box">Rețea: conexiune la internet este optionala</span><br />
+        </p>
+        <br><br>
+
+
+
+        <p class="scris_mictitlu"> Pretul este de 29.99€ </p>
+        
+        <button onclick="cumpara()" class="btn btn-2 btn-sep icon-cart">Cumpara </button>
+       <br> <a href="Pagina1.html" > <button  class="back" >   Inapoi   </button> </a>
+    
+    </body>
+
+
+      <script type="text/javascript">
+        let imagine = document.getElementById("poze");
+        let poze = ["DarksidersII1.jpg", "DarksidersII2.jpg", "DarksidersII3.jpg"];
+
+        setInterval(Functie, 2400);
+        var k = 0;
+        imagine.src = poze[k];
+    
+        function Functie() {
+          k++;
+          if (k == 3) k = 0;
+          imagine.src = poze[k];
+        }
+      </script>
+      <script type="text/javascript">
+        var x=0;
+        function cumpara()
+        {var i= window.prompt("Cate exemplare vrei sa cumperi ? ");
+     i=Number(i) ;
+    x=x+i;
+     let ok=confirm('Cu siguranta vrei sa cumperi '+x+" exemplare?");
+     if(ok==true)
+     localStorage.setItem("ok7",x);
+      return ;
+        }
+        
+      </script>
+</body>
+</html>

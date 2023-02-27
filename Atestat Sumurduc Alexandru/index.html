@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> Atestat</title>
+</head>
+<body class="body2" style="overflow: hidden">
+    <p style="text-align:center;font-size:3em;color:blue; font-weight:bold;"><a class="special"  target="pag">Colegiul National Mihail Kogalniceanu Galati
+<BR>
+Proiect in vederea sustinerii atestatului la informatica</a>
+</p>   
+<br>
+<button class="btn-menu" onclick="afisare()" >
+<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="menu" focusable="false" class="" >
+    <g><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" ></path></g></svg>
+</button>
+<div class="meniu"> 
+    <button id="color1" onclick="mutare('acasa.html')" class="btn-meniu" > Acasa</button>
+    <button id="color2" onclick="mutare('Pagina1.html')" class="btn-meniu">Jocuri</button>
+    <button id="color3" onclick="mutare('cos.html')"class="btn-meniu">Cos</button>
+    <button id="color4" onclick="mutare('2048.html')" class="btn-meniu">Demo </button>
+</div>
+<iframe class="frame" src="acasa.html" id="frame"></iframe>
+</body>
+<script>
+function mutare(x){
+    document.getElementById('frame').src=x
+}
+var x=1,r=255,v=0,b=0,stage=0,increment=1;
+    setInterval(culoare,1)
+ function  culoare() {
+  if (stage == 0)
+  {
+    r -= increment;
+    v += increment;
+    if (v >= 255)
+      stage = 1;
+  } else if (stage == 1)
+  {
+    v -= increment;
+    b += increment;
+    if (b >= 255)
+      stage = 2;
+  } else if (stage == 2)
+  {
+    b -= increment;
+    r += increment;
+    if (r >= 255)
+      stage = 0;
+  }
+  for(i=1;i<5;i++)
+  {
+document.getElementById('color'+i).style.backgroundColor = "rgb("+r+","+v+","+b+")"
+  document.getElementById('color'+i).style.color = "rgb("+v+","+b+","+r+")"
+  }
+}
+</script>
+
+</script>
+</html>

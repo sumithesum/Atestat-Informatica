@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1e52114838.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>New World</title>
+</head>
+<body>
+    <body class="bodymain">
+        <p class="scris_titlu">New World</p>
+        <img src="" id="poze" class="poza" />
+        <br />
+        <p class="scris_titlu2">DESCRIERE</p>
+        <p class="scris_normal">
+            &nbsp;&nbsp;&nbsp;&nbsp;Explorați un MMO palpitant, cu lume deschisă, plin de pericole și oportunități,
+            în care vă veți crea un nou destin ca un aventurier naufragiat pe insula
+            supranaturală Aeternum. Ocazii nesfârșite de a lupta, de a căuta și de a
+            forja vă așteaptă printre sălbăticia și ruinele insulei. Canalizează forțe 
+            supranaturale sau mânuiește arme mortale într-un sistem de luptă în timp real
+             fără clase și luptă singur, cu o echipă mică sau în armate masive pentru 
+             bătălii PvE și PvP - alegerile sunt toate ale tale.
+          <br /><br />
+         &nbsp;&nbsp;&nbsp;&nbsp;De mii de ani, Aeternum a fost sursa unor legende 
+         fantastice - iar acum l-ai găsit. Naufragiat și fără provizii sau aliați,
+         va trebui să-ți croiești drum într-o lume periculoasă în care puterea 
+         supranaturală a schimbat toate regulile. Într-un astfel de pământ, 
+         destinul tău este orice ai face din el.
+        <br /><br />
+        Publicat de Amazon Game Studios </p>
+        <p class="scris_normal">
+          <span class="scris_mictitlu"
+            >Etichete populare definite pentru acest produs:</span
+          ><br />
+           <ul class="scris_normal">
+            <li>Joc de rol cu multiplayer online în masă</li> 
+            <li>Open World</li>
+            <li> MMORPG+ </li> 
+            <li>Joc video shooter</li>
+            </ul>
+         </p>
+
+
+        <p class="scris_titlu2">CERINȚE DE SISTEM</p>
+        <p class="scris_normal">
+          <span class="scris_mictitlu">MINIM:</span>
+          <br />
+          <br />
+          <span class="box"
+            >Necesită un procesor pe 64 de biți și un sistem de operare</span
+          ><br />
+          <span class="box">OS: Windows 10 pe 64 de biți</span><br />
+          <span class="box">Procesor: Intel Core i5-2400 / procesor AMD cu 4 nuclee
+               fizice la 3 Ghz sau echivalent</span
+          ><br />
+          <span class="box">Memorie: 8 GB RAM</span><br />
+          <span class="box"
+            >NVIDIA GeForce GTX 670 2GB / AMD Radeon R9 280 sau mai bună</span
+          ><br />
+          <span class="box">DirectX: Versiunea 12</span><br />
+          <span class="box">Stocare: 50 GB spațiu disponibil</span><br />
+          <span class="box">Rețea: conexiune la internet în bandă largă</span><br />
+        </p>
+
+
+
+        <p class="scris_normal">
+          <span class="scris_mictitlu">RECOMANDAT:</span>
+          <br />
+          <br />
+          <span class="box">Necesită un procesor pe 64 de biți și un sistem de operare</span><br />
+          <span class="box">OS: Windows 10 pe 64 de biți</span><br />
+          <span class="box">Procesor: Intel Core i5-2400 / procesor AMD cu 4 nuclee fizice
+               la 3 Ghz sau echivalent</span
+          ><br />
+          <span class="box">Memorie: 8 GB RAM</span><br />
+          <span class="box"
+            >Grafică: NVIDIA GeForce GTX 670 2GB / AMD Radeon R9 280 sau mai bună</span
+          ><br />
+          <span class="box">DirectX: Versiunea 12</span><br />
+          <span class="box">Stocare: 55 GB spațiu disponibil</span><br />
+          <span class="box">Rețea: conexiune la internet în bandă largă</span><br />
+        </p>
+        <br><br>
+
+
+
+        <p class="scris_mictitlu"> Pretul este de 40€ </p>
+        
+        <button onclick="cumpara()" class="btn btn-2 btn-sep icon-cart">Cumpara</button>
+       <br> <a href="Pagina1.html" > <button  class="back" >   Inapoi   </button> </a>
+    
+    </body>
+
+
+      <script type="text/javascript">
+        let imagine = document.getElementById("poze");
+        let poze = ["new-world2.jpg", "new-world1.jpg", "new-world3.jpg"];
+
+        setInterval(Functie, 2400);
+        /* function Functie()  Modul de a face cu random number;
+            {
+                let random=Math.floor(Math.random() * 3);
+                console.log(random);
+                imagine.src=poze[random];
+            }  */
+        var k = 0;
+        imagine.src = poze[k];
+    
+        function Functie() {
+          k++;
+          if (k == 3) k = 0;
+          imagine.src = poze[k];
+        }
+      </script>
+      <script type="text/javascript">
+        var x=0;
+        function cumpara()
+        {var i= window.prompt("Cate exemplare vrei sa cumperi ? ");
+     i=Number(i) ;
+    x=x+i;
+     let ok=confirm('Cu siguranta vrei sa cumperi '+x+" exemplare?");
+     if(ok==true)
+     localStorage.setItem("ok1",x);
+      return ;
+        }
+        
+      </script>
+</body>
+</html>
